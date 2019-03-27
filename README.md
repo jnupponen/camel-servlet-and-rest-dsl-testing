@@ -1,5 +1,7 @@
 # Camel Servlet and Rest DSL testing
 
+## This project is example, and it will not be updated though it has know issues in its dependencies. Dependency file pom.xml has been zipped to avoid automatic dependency scanning and you must explicitly unzip it to use this project.
+
 As as solution to Stackoverflow.com [question](http://stackoverflow.com/questions/32483178/how-to-set-cache-control-headers-in-apache-camel/). The code exposes simple rest interface GET /hello which will response with text "ok". Endpoint /hello is just a proxy to real implementation that is exposed as netty-http-endpoint. The code uses custom HeaderFilterStrategy because otherwise Camel will strip custom headers from the response as was the problem in the Stackoverflow question.
 
 ## Endpoints
